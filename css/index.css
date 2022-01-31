@@ -1,0 +1,33 @@
+body{
+
+    background-color: rgb(27, 23, 23);
+}
+
+.logo{
+border: 2px solid gray;
+margin-bottom: 100px;
+
+}
+main img{
+margin: 0px;
+
+
+}
+
+.slides { width: 49%; }
+
+.slides-hidden { display : none; }
+
+.slides2 { width: 49%; }
+
+.slides-hidden2 { display : none; }
+
+.slides3 { width: 49%; }
+
+.slides-hidden3 { display : none; }
+
+.slides4 { width: 49%; }
+
+.slides-hidden4 { display : none; }
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="../../css/stylepelis.css">
+    <link rel="icon" type="image/png" href="../../img/favicon.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../../img/favicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../img/favicon.png" sizes="64x64">
+
+    <script src="../../js/films/relacionadas.js" defer></script>
+</head>
+<body>
+  <!-- The header that contains the title and the Search bar -->
+    <header>
+        <a id="volver"  href="../../index.html"><button class="button is-warning  ">Volver a la portada</button></a>
+        <form id="form">
+            <input
+                type="text"
+                id="search"
+                placeholder="Search"
+                class="search"
+            />
+        </form>
+    </header>
+
+    <div >
+        <button class="banderas" id="ruso"><img src="../../img/rusia.jpg" alt="español" height="20px" width="40px"> </button>
+        <button class="banderas" id="ingles"><img src="../../img/usa.jpg" alt="inglés" height="20px" width="40px"> </button>
+        <button class="banderas" id="español"><img src="../../img/españita.jpg" alt="español" height="20px" width="40px"> </button>
+        
+    </div>
+  <!-- The main tag where we are going to put all our movies that we got from the API -->
+    <main id="main"></main>
+    
+    <footer class="footer has-background-danger-dark">
+    
+        <h5 id="derechosreservados">La filmoteca: Miguel Ángel Pérez Jimenéz 20021 &#169;</h5>
+        <h5 id="fuente">Toda la informacion ha sido sacada de TMDB</h5>
+    </footer>
+</body>
+</html>

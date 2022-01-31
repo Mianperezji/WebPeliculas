@@ -1,0 +1,330 @@
+@import "../css/bulma/css/bulmapelis.css";
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.centrate{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.navbar{
+display :flex;
+justify-content: space-around;
+align-items: center;
+
+}
+
+
+.divabajo{
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color:  rgb(27, 23, 23);
+
+
+}
+
+
+main .divisor{
+    margin-top: 20px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color:  rgb(27, 23, 23);
+}
+header{
+    width: 100%;
+    height: 150px;
+    background: rgb(38, 39, 38);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    background-color: rgb(27, 23, 23);
+    background-image: url(../img/lafilmoteca.png);
+    background-size: 800px 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header h1{
+    margin: 0 20px;
+    color: #fff;
+}
+header a {
+    text-decoration: none;
+}
+header form{
+    display: flex;
+    align-items: center;
+}
+/* The search bar */
+#search{
+    width: 230px;
+    height: 30px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 15px;
+    background-color: white;
+    
+}
+
+
+#navegacion{
+display: flex;
+justify-content: space-around;
+width: 70%;
+
+}
+
+nav div{
+    border: 1px solid #ccc;
+    color: #ccc;
+    width: 10em;
+    height: 5em;
+    text-align: center;
+    text-justify:newspaper;
+   
+
+}
+
+#form{
+    background: rgb(27, 23, 23);
+
+}
+
+#busqueda{
+display: flex;
+justify-content: flex-end;
+
+
+}
+
+
+#main div{
+    width: 50%; 
+
+}
+
+#main div div{
+    display: flex;
+    width: 100%;
+}
+
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecerapeli{
+    display: flex;
+    justify-content: space-between;
+    background-color:  rgb(27, 23, 23);
+}
+
+
+
+
+.infopeli{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+}
+.cajapeli{
+    background-color: #EEEBDD;
+
+}
+
+
+
+
+
+/*  le doy forma a los botones*/
+
+
+#buttons{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+/* Le doy animacion a los botones y estilo 
+.button1 {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    background: #EEEBDD;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.button1:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.button1:active {
+    color: #EEEBDD
+}
+
+.button1:active:after {
+    background: transparent;
+}
+
+.button1:hover:before {
+    opacity: 1;
+}
+
+.button1:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #EEEBDD;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+*/
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer h5{
+    color: #ccc;
+    text-align: center;
+}
+
+#derechosreservados{
+    
+    grid-row: 2/3;
+    grid-column:2/3 ;
+}
+#fuente{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+a#volver{
+    color:white;
+  }
+
+
+
+
+
+
+  /* Cambio el estilo dependiendo de la puntuacion, la clase se la otorga el codigo javascript */
+.excelente{
+background-color: green;
+color: #630000;
+
+}
+
+.buena{
+background-color: greenyellow;
+color: #630000;
+}
+
+.normal{
+    background-color: yellowgreen;
+    color: #630000;
+
+
+}
+
+.mediocre{
+    background-color: yellow;
+    color: #630000;
+
+
+}
+
+.sininfo{
+    background-color: gainsboro;
+    color: #630000;
+
+
+}
+
+.mala{
+    background-color: red;
+    color: #ccc;
+
+
+}
+
+/* estilo de la fecha de estreno para la pagina de nuevas*/
+
+.fecha{
+    color: #ccc;
+}
+
+/*Coloco las banderas para selecionar el idioma a la derecha */
+.banderas{
+    float: right;
+    border-radius: 50%;
+    
+    }
+
+.banderas> img{
+    border-radius: 50%;
+    height: 40px;
+    width: 60px;
+
+}

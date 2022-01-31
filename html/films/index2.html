@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="../../css/stylepelis.css">
+    <link rel="icon" type="image/png" href="../../img/favicon.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../../img/favicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../img/favicon.png" sizes="64x64">
+    <script src="../../js/films/app.js" defer></script>
+</head>
+<body>
+  <!-- The header that contains the title and the Search bar -->
+    <header>
+        <!--enlace a la portada-->
+        <a id="volver" href="../../index.html"><button class="button is-warning">Volver a la Portada</button></a>
+        <!--barra de busqueda-->
+        <nav id="busqueda">
+            
+            <form id="form">
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search"
+                    class="search"
+                />
+            </form>
+        </nav>
+    </header>
+ 
+    <div class="navbar has-background-danger-dark columns "><!--botones para cambiar las diferentes peliculas segun su categoria-->
+        <a href="Valoradas.html"class="column centrate is-8" ><button class="button is-warning column is-5 ">Películas Valoradas</button></a>
+        
+        <a href="Nuevas.html" class="column centrate is-8" ><button class="button is-warning column is-5 ">Películas Nuevas</button></a>
+    </div>
+    <div >
+        <button class="banderas is-rounded" id="ruso"><img class="is-rounded" src="../../img/rusia.jpg" alt="español" height="20px" width="40px"> </button>
+        <button class="banderas" id="ingles"><img src="../../img/usa.jpg" alt="inglés" height="20px" width="40px"> </button>
+        <button class="banderas" id="español"><img src="../../img/españita.jpg" alt="español" height="20px" width="40px"> </button>
+        
+    </div>
+    <br><br><br>
+    
+    <!--Main , aqui se insertan los elementos creados por JS-->
+    <main id="main"></main>
+
+    <!--Botones y ancla a inicio para cuando hagan mucho scroll, el primer boton carga mas peliculas-->
+    <div class="columns divabajo">
+        <a  class=" column centrate is-8 "><button id ="nextpage" class="button is-warning column is-5 ">Cargar más películas</button></a>
+        <a href="#volver" class=" column centrate is-8 "><button id="Start" class=" button is-warning column is-5 " >Ir a Inicio</button></a>
+    </div>
+    <footer class="footer has-background-danger-dark">
+        <!--Footer --> 
+        <h5  id="derechosreservados">La filmoteca: Miguel Ángel Pérez Jimenéz 20021 &#169;</h5>
+        <h5 id="fuente">Toda la informacion ha sido sacada de TMDB</h5>
+    </footer>
+</body>
+</html>

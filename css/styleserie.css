@@ -1,0 +1,261 @@
+@import "../css/bulma/css/bulmaseries.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    background-color: #00adb5;
+}
+
+.centrate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+.navbar{
+    display :flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.divabajo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00adb5
+    
+    
+    }
+
+
+
+
+
+
+
+
+header{
+    width: 100%;
+    height: 150px;
+    background: rgb(38, 39, 38);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    background-color: rgb(27, 23, 23);
+    background-image: url(../img/lafilmoteca.png);
+    background-size: 800px 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header h1{
+    margin: 0 20px;
+    color: #fff;
+}
+header a {
+    text-decoration: none;
+}
+header form{
+    display: flex;
+    align-items: center;
+}
+/* The search bar */
+#search{
+    width: 230px;
+    height: 30px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 15px;
+    background-color: white;
+    
+}
+
+
+#navegacion{
+display: flex;
+justify-content: space-around;
+width: 70%;
+
+}
+
+nav div{
+    border: 1px solid #ccc;
+    color: #ccc;
+    width: 10em;
+    height: 5em;
+    text-align: center;
+    text-justify:newspaper;
+   
+
+}
+
+#form{
+    background: rgb(27, 23, 23);
+
+}
+
+#busqueda{
+display: flex;
+justify-content: flex-end;
+
+
+}
+
+
+#main div{
+    width: 50%;
+    
+    
+}
+
+#main div div{
+    display: flex;
+    width: 100%;
+}
+
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecerapeli{
+    display: flex;
+    justify-content: space-between;
+    background-color:  #aad8d3;
+}
+
+.cabecerapeli h2{
+    background-color:  #aad8d3;
+    color: #393e46;
+
+}
+
+
+
+.infopeli{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+}
+.cajapeli{
+    background-color:  #aad8d3;
+
+}
+
+
+#menu{
+
+    display: flex;
+    justify-content: space-around;
+    
+    border: 2px solid #393e46;
+    background-color: #aad8d3;
+}
+
+#menu a{
+    background-color: #aad8d3;
+    color: #393e46;
+
+
+}
+
+
+#buttons{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+
+
+
+footer h5{
+    color: black;
+    text-align: center;
+}
+
+#derechosreservados{
+    
+    grid-row: 2/3;
+    grid-column:2/3 ;
+}
+#fuente{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+a#volver{
+    color:white;
+    border: #fff solid 1px;
+    border-radius: 5px;
+  }
+
+  /* Cambio el estilo dependiendo de la puntuacion, la clase se la otorga el codigo javascript */
+  .excelente{
+    background-color: green;
+    color: #630000;
+    
+    }
+    
+    .buena{
+    background-color: greenyellow;
+    color: #630000;
+    }
+    
+    .normal{
+        background-color: yellowgreen;
+        color: #630000;
+    
+    
+    }
+    
+    .mediocre{
+        background-color: yellow;
+        color: #630000;
+    
+    
+    }
+    
+    .sininfo{
+        background-color: gainsboro;
+        color: #630000;
+    
+    
+    }
+    
+    .mala{
+        background-color: red;
+        color: #ccc;
+    
+    
+    }
+
+/*Coloco las banderas para selecionar el idioma a la derecha */
+.banderas{
+float: right;
+border-radius: 50%;
+}
+
+.banderas > img{
+    border-radius: 50%;
+    height: 40px;
+    width: 60px;
+
+
+}
